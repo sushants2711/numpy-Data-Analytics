@@ -1,0 +1,27 @@
+Slicing - It is used to access the values from an array to a specific range.
+
+It is also followed zero based index than means start form 0 and end with length - 1
+
+It is also support the negative index
+
+In Slicing it is also possible to revese an array without using loop so it is also possible 
+
+arr[:: -1]
+
+
+SYNTAX
+
+for 1d array
+
+arr[start: end: step]
+
+start - starting index of an array 
+
+end -  ending index of an array n-1
+
+step - step means how many value skips while printing an array
+
+
+for 2d array
+
+array[row_start : row_stop : row_step , col_start : col_stop : col_step]

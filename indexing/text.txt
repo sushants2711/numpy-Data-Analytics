@@ -1,0 +1,9 @@
+Indexing - Indexing is used to access the values from an numpy array. It is also support negative indexing.
+
+Indexing is start from an 0 and length - 1
+
+to find the length len(arr)
+
+for 1d array : array[index]
+
+for 2d array : array[row index , column index]

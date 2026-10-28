@@ -1,0 +1,2 @@
+Fancy Indexing - Fancy indexing is used to access the multiple value at a same time.
+

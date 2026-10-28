@@ -1,0 +1,10 @@
+Flattening - Flattening can convert a multidimensional array back into 1D.
+
+flatten() - flatten() returns a new, independent copy of the array converted into one dimension.
+
+Means if we change the element of an array in the new array that old array dont get affected.
+
+
+ravel() - ravel() returns a 1D view of the array whenever possible, rather than creating a separate copy.
+
+Means if we change the element of an array in the new array that old array get affected.

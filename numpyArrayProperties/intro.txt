@@ -1,0 +1,1 @@
+if there is any value in an array are empty or NAN so at that time when we apply the methof or function or properties so at that time we just use * nan * mean --- nan in the starting

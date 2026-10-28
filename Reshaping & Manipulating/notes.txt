@@ -1,0 +1,16 @@
+Reshaping - Reshaping means changing the structure/dimensions of an array without changing its data.
+
+reshape() does not change the original array. It returns a new reshaped view of the same underlying data
+
+
+rule: 
+
+1. The number of elements must remain the same.
+
+syntax
+
+import numpy as np
+
+arr = np.array([10, 20, 30, 40, 50, 60])
+
+print(arr.reshape(2, 3))
