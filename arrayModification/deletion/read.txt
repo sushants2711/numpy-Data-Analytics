@@ -1,0 +1,13 @@
+deletion - delete the element from an array. It also return a new array. we can also delete multiple element at a same time. we pass the index number to delete the element from an array
+
+// synatx
+
+np.delete(array, index, axis)
+
+array - in which array we want to perform an operation
+index - which index we want to delete
+axis - the dimension along which to insert
+
+axis = None - for 1d array
+axis = 0 - for row wise 
+axis = 1 - for column wise

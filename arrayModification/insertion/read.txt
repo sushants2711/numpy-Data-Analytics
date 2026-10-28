@@ -1,0 +1,14 @@
+insertion - adding the value in an array of an specific position. It always return a new array. We also add multiple value at a same time in an array.
+
+// synatx
+
+np.insert(arrayName, index, value, axis)
+
+arrayname - which array you want to perform
+index - the position where you want to insert
+value - what value you want to add
+axis - the dimension along which to insert
+
+axis = None - for 1d array
+axis = 0 - for row wise 
+axis = 1 - for column wise

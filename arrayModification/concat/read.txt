@@ -1,0 +1,15 @@
+concatination - adding multiple array into a new array in the end of the first element. it also return a new array.
+
+// synatx 
+
+result = np.concatenate((arr1, arr2), axis)
+
+arr1 and arr2 - how many array that we want to pass
+axis - the dimension along which to insert
+
+axis = None - for 1d array
+axis = 0 - for row wise 
+axis = 1 - for column wise
+
+* - why it take (()) two brackets because it only want to accept a single value not accept multiple value so we can do a round bracket ()
+

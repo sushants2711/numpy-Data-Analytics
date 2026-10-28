@@ -1,0 +1,13 @@
+append - append is used to add the element at the end of an array. It also return a new array. we also add multiple value at a same time 
+
+// synatx
+
+np.append(arr, value, axis)
+
+arr - array in which you want to perform 
+value - what value you want to add
+axis - the dimension along which to insert
+
+axis = None - for 1d array
+axis = 0 - for row wise 
+axis = 1 - for column wise
