@@ -19,8 +19,18 @@ splitting - it is used to split an array to a equal parts and also Unequal parts
 equal splitting - divides the array into 2 equal parts using 
 
 1. split - divides into 2 equal parts 
-2. vsplit - Vertical splitting — generally used to split rows.
-3. hsplit - Horizontal splitting — generally used to split columns.
+
+// split syntax 
+np.split(arr, how many times, axis) 
+axis = 0 row wise
+axis = 1 column wise for 1d array no need of axis
+
+2. vsplit - Vertical splitting — generally used to split rows. axis = 0 row wise
+np.vsplit(array, number_of_parts)
+
+3. hsplit - Horizontal splitting — generally used to split columns. axis = 1 column wise
+np.hsplit(array, number_of_parts)
+
 
 unequal splitting - divides the array into a unequal parts. It has only 1 types: 
 
