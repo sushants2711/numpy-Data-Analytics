@@ -1,0 +1,14 @@
+stacking - it is used to join multiple array. It has two types: 
+
+1. vstack() - it add the array on the ROW wise just like axis = 0
+2. hstack() - it add the array on the COLUMN wise just like axis = 1
+
+It has many types like 
+
+np.stack((arr1, arr2)) -  row wise
+np.stack((arr1, arr2), axis = 0) - row wise
+np.stack((arr1, arr2), axis = 1) - change the whole row to column not add the column wise this is the difference whole row change to whole column
+
+
+np.vstack((a, b)) -  row wise for 1d and 2d array
+np.hstack((a, b)) - column wise for 1d and 2d array just normal append and insert like 
