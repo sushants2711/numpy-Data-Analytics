@@ -1,0 +1,320 @@
+                    NumPy
+                      │
+       ┌──────────────┼──────────────┐
+       ↓              ↓              ↓
+   Creation       Properties      Reshaping
+       │              │              │
+ array/zeros      shape/ndim      reshape
+ arange/random    size/dtype      flatten
+       │                             T
+       ↓
+   Combining
+       │
+ concatenate
+ vstack
+ hstack
+ stack
+       │
+       ↓
+    Splitting
+       │
+ split
+ array_split
+ hsplit
+ vsplit
+       │
+       ↓
+ Add / Remove
+       │
+ append
+ insert
+ delete
+       │
+       ↓
+ Search / Filter
+       │
+ where
+ argmax/argmin
+ boolean indexing
+ unique
+       │
+       ↓
+ Statistics
+       │
+ sum
+ mean
+ median
+ std
+ var
+ min/max
+       │
+       ↓
+ Random
+       │
+ rand
+ randn
+ randint
+ choice
+
+
+
+
+ NumPy
+│
+├── 1. ARRAY CREATION
+│   ├── np.array()
+│   ├── np.zeros()
+│   ├── np.ones()
+│   ├── np.full()
+│   ├── np.empty()
+│   ├── np.arange()
+│   ├── np.linspace()
+│   ├── np.eye()
+│   └── np.diag()
+│
+├── 2. RANDOM DATA
+│   ├── np.random.rand()
+│   ├── np.random.randn()
+│   ├── np.random.randint()
+│   ├── np.random.choice()
+│   ├── np.random.uniform()
+│   ├── np.random.normal()
+│   └── np.random.default_rng()
+│
+├── 3. ARRAY PROPERTIES
+│   ├── shape
+│   ├── ndim
+│   ├── size
+│   ├── dtype
+│   ├── itemsize
+│   └── nbytes
+│
+├── 4. DATA TYPES
+│   ├── int
+│   ├── float
+│   ├── bool
+│   ├── str
+│   ├── astype()
+│   └── dtype
+│
+├── 5. INDEXING & SLICING ⭐⭐⭐
+│   ├── arr[0]
+│   ├── arr[0, 1]
+│   ├── arr[:, 0]
+│   ├── arr[0, :]
+│   ├── arr[1:4]
+│   ├── arr[::-1]
+│   └── boolean indexing
+│
+├── 6. RESHAPING ⭐⭐⭐
+│   ├── reshape()
+│   ├── resize()
+│   ├── flatten()
+│   ├── ravel()
+│   ├── transpose()
+│   ├── .T
+│   ├── np.expand_dims()
+│   └── np.squeeze()
+│
+├── 7. COMBINING / JOINING ⭐⭐⭐
+│   ├── np.concatenate()
+│   ├── np.vstack()
+│   ├── np.hstack()
+│   ├── np.stack()
+│   ├── np.column_stack()
+│   └── np.row_stack()
+│
+├── 8. SPLITTING ⭐⭐⭐
+│   ├── np.split()
+│   ├── np.array_split()
+│   ├── np.hsplit()
+│   └── np.vsplit()
+│
+├── 9. ADD / REMOVE
+│   ├── np.append()
+│   ├── np.insert()
+│   └── np.delete()
+│
+├── 10. SEARCHING / FILTERING ⭐⭐⭐
+│   ├── np.where()
+│   ├── np.argwhere()
+│   ├── np.nonzero()
+│   ├── np.argmax()
+│   ├── np.argmin()
+│   ├── np.searchsorted()
+│   └── boolean filtering
+│
+├── 11. UNIQUE / DUPLICATES
+│   ├── np.unique()
+│   ├── return_counts=True
+│   ├── return_index=True
+│   └── return_inverse=True
+│
+├── 12. SORTING ⭐⭐
+│   ├── np.sort()
+│   ├── np.argsort()
+│   └── arr.sort()
+│
+├── 13. NULL / NaN / INFINITY ⭐⭐⭐
+│   ├── np.isnan()
+│   ├── np.isnull() ❌
+│   ├── np.isfinite()
+│   ├── np.isinf()
+│   ├── np.nan
+│   ├── np.nanmean()
+│   ├── np.nanmedian()
+│   ├── np.nansum()
+│   ├── np.nanmin()
+│   └── np.nanmax()
+│
+├── 14. MATHEMATICAL OPERATIONS
+│   ├── np.add()
+│   ├── np.subtract()
+│   ├── np.multiply()
+│   ├── np.divide()
+│   ├── np.power()
+│   ├── np.sqrt()
+│   ├── np.abs()
+│   ├── np.round()
+│   ├── np.floor()
+│   └── np.ceil()
+│
+├── 15. STATISTICS ⭐⭐⭐
+│   ├── np.sum()
+│   ├── np.mean()
+│   ├── np.median()
+│   ├── np.std()
+│   ├── np.var()
+│   ├── np.min()
+│   ├── np.max()
+│   ├── np.ptp()
+│   └── axis
+│
+├── 16. AGGREGATION + AXIS ⭐⭐⭐
+│   ├── axis=0
+│   ├── axis=1
+│   ├── keepdims=True
+│   └── cumulative operations
+│       ├── np.cumsum()
+│       └── np.cumprod()
+│
+├── 17. BROADCASTING ⭐⭐⭐
+│   ├── scalar broadcasting
+│   ├── row broadcasting
+│   ├── column broadcasting
+│   ├── shape compatibility
+│   └── broadcasting rules
+│
+├── 18. VECTORIZATION ⭐⭐⭐
+│   ├── vectorized operations
+│   ├── avoid Python loops
+│   ├── ufuncs
+│   ├── np.vectorize() ⚠️
+│   └── conditional operations
+│       ├── np.where()
+│       └── np.select()
+│
+├── 19. UNIVERSAL FUNCTIONS (ufuncs)
+│   ├── np.add()
+│   ├── np.subtract()
+│   ├── np.multiply()
+│   ├── np.divide()
+│   ├── np.sqrt()
+│   ├── np.exp()
+│   ├── np.log()
+│   ├── np.sin()
+│   └── np.cos()
+│
+├── 20. COPYING / VIEWS ⭐⭐⭐
+│   ├── shallow/reference behavior
+│   ├── view()
+│   ├── copy()
+│   └── memory sharing
+│
+├── 21. CONDITIONAL OPERATIONS
+│   ├── np.where()
+│   ├── np.select()
+│   ├── np.logical_and()
+│   ├── np.logical_or()
+│   ├── np.logical_not()
+│   └── np.logical_xor()
+│
+├── 22. SET OPERATIONS
+│   ├── np.unique()
+│   ├── np.intersect1d()
+│   ├── np.union1d()
+│   ├── np.setdiff1d()
+│   └── np.setxor1d()
+│
+├── 23. LINEAR ALGEBRA ⭐⭐
+│   ├── np.dot()
+│   ├── np.matmul()
+│   ├── @
+│   ├── np.linalg.inv()
+│   ├── np.linalg.det()
+│   ├── np.linalg.solve()
+│   ├── np.linalg.eig()
+│   └── np.linalg.norm()
+│
+├── 24. STRING OPERATIONS
+│   ├── np.char
+│   ├── np.char.lower()
+│   ├── np.char.upper()
+│   ├── np.char.strip()
+│   ├── np.char.replace()
+│   └── np.char.split()
+│
+└── 25. PERFORMANCE / MEMORY
+    ├── vectorization
+    ├── broadcasting
+    ├── views vs copies
+    ├── dtype optimization
+    ├── memory usage
+    └── avoiding unnecessary copies
+
+
+
+    1. np.array()
+2. shape / ndim / size / dtype
+3. indexing
+4. slicing
+5. boolean indexing
+6. reshape()
+7. flatten() / ravel()
+8. transpose / .T
+9. axis
+10. concatenate()
+11. vstack()
+12. hstack()
+13. split()
+14. hsplit()
+15. vsplit()
+16. append()
+17. insert()
+18. delete()
+19. where()
+20. unique()
+21. sum()
+22. mean()
+23. min() / max()
+24. std() / var()
+25. NaN handling
+26. broadcasting
+27. vectorization
+
+
+np.stack()
+np.array_split()
+np.argsort()
+np.argmax()
+np.argmin()
+np.cumsum()
+np.column_stack()
+np.expand_dims()
+np.squeeze()
+np.select()
+np.isfinite()
+np.isinf()
+np.nanmean()
+np.nansum()
+np.random.default_rng()

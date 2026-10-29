@@ -1,0 +1,29 @@
+        Splitting
+           │
+     ┌─────┴───────────────┐
+     │                     │
+   Equal                Unequal
+     │                     │
+   split              array_split
+     │
+ ┌───┴────┐
+ │        │
+hsplit   vsplit
+
+
+splitting - it is used to split an array to a equal parts and also Unequal parts. It has two types
+
+1. equal splitting 
+2. unequal splitting
+
+equal splitting - divides the array into 2 equal parts using 
+
+1. split - divides into 2 equal parts 
+2. vsplit - Vertical splitting — generally used to split rows.
+3. hsplit - Horizontal splitting — generally used to split columns.
+
+unequal splitting - divides the array into a unequal parts. It has only 1 types: 
+
+array_split - Can split into unequal-sized parts.
+
+np.array_split(array, number_of_parts)
