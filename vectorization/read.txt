@@ -1,0 +1,10 @@
+# vectorization - Vectorization means performing an operation on an entire NumPy array at once, instead of using a Python for loop to process each element individually
+
+array = np.array([10, 20, 30, 40])
+
+res = array * 2
+
+print(res)
+
+# output
+[20, 40, 60, 80]

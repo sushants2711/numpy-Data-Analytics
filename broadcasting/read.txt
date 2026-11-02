@@ -1,0 +1,18 @@
+# broadcasting - broadcasting in numpy can perform operations between arrays of different shapes by automatically expanding and shrinking the array.
+
+# numpy automatically adjust compatiable shapes so array operation can happen without manually copying data
+
+# rules: 
+
+# 1. Matching the dimension
+# 2. Expanding single elements
+# 3. Incompatiable shape
+
+
+import numpy as np
+
+arr = np.array([10, 20, 30, 40, 50])
+
+res = arr + 5
+
+print(res)
